@@ -1,0 +1,5 @@
+webdav:
+  hostname: https://mywebdav.com/public
+  username: myusername
+  password: mypassword
+  
