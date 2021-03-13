@@ -16,7 +16,7 @@ def append_to_log(line):
     file.append_all_lines('download.log', [line+'\n'])
 
 
-@func_set_timeout(3)
+@func_set_timeout(15)
 def download(file_name, response, bar):
     with open(file_name, "ab") as f:
         for chunk in response.iter_content(chunk_size=1024 * 100):
